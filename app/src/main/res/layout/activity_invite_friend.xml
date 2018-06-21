@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a123.whatsapp_2.inviteFriendActivity">
+
+    <TextView
+        android:id="@+id/phoneNumber_textView"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="144dp"
+        android:text="Phone Number"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Send Message"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_toRightOf="@+id/phoneNumber_textView"
+        android:layout_toEndOf="@+id/phoneNumber_textView" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phoneNumber_textView"
+        android:layout_alignStart="@+id/phoneNumber_textView"
+        android:layout_below="@+id/phoneNumber_textView"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="phone" />
+</RelativeLayout>

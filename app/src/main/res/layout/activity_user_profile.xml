@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mr.khan2.userProfile"
+    android:background="@color/cardview_shadow_start_color">
+
+
+    <TextView
+        android:id="@+id/prfile_friends"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/profile_status_text_view"
+        android:layout_alignStart="@+id/profile_status_text_view"
+        android:layout_below="@+id/profile_status_text_view"
+        android:layout_marginTop="13dp"
+        android:text="Friends"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/profile_name"
+        android:layout_alignStart="@+id/profile_name"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/profile_name_text_view"
+        android:layout_alignStart="@+id/profile_name_text_view"
+        android:layout_below="@+id/profile_image_imageView"
+        android:layout_marginTop="33dp"
+        android:text="Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/profile_name_text_view"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        android:layout_below="@+id/profile_name"
+        android:layout_alignLeft="@+id/profile_status"
+        android:layout_alignStart="@+id/profile_status" />
+
+    <TextView
+        android:id="@+id/profile_friends_text_view"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/prfile_friends"
+        android:layout_alignStart="@+id/prfile_friends"
+        android:layout_below="@+id/prfile_friends"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/profile_status"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/profile_status_text_view"
+        android:layout_alignStart="@+id/profile_status_text_view"
+        android:layout_centerVertical="true"
+        android:text="Status"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/profile_status_text_view"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="17sp"
+        android:layout_below="@+id/profile_status"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Change Image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/profile_image_imageView"
+        android:layout_alignStart="@+id/profile_image_imageView"
+        android:visibility="gone"/>-->
+
+
+</RelativeLayout>

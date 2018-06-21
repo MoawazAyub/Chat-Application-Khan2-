@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_displayname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.mr.khan2.SettingsActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/unknown" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Unknown"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/update_photo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/settings_update_name"
+        android:layout_alignLeft="@+id/circleImageView"
+        android:layout_alignStart="@+id/circleImageView"
+        android:background="?android:attr/textSelectHandle"
+        android:text="Update Photo"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/settings_update_name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/setting_update_status"
+        android:layout_alignLeft="@+id/update_photo"
+        android:layout_alignStart="@+id/update_photo"
+        android:background="?android:attr/textSelectHandle"
+        android:text="Update Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/setting_update_status"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/settings_update_name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/settings_update_name"
+        android:layout_marginBottom="27dp"
+        android:background="?android:attr/textSelectHandle"
+        android:text="Update Status"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="13dp"
+        android:text="unknown"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</RelativeLayout>
